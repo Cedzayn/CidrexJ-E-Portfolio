@@ -247,6 +247,17 @@ ul
   margin-top: 50px;
 }
 
+.nav a 
+{
+  color: var(--skin-color);
+  transition: color 0.3s ease;
+
+}
+
+.nav a.active {
+  color: var(--skin-color) /* Change this color as needed */
+}
+
 .aside .nav li
 {
   margin-top: 20px;
@@ -354,8 +365,28 @@ h3.my-profession
 .about
 {
   padding-top: 50px;
-
 }
+.about-img {
+  margin-left: 50px;
+  width: 100%; /* Make it take the full width of its container */
+  max-width: 1000px; /* Set a max width for the image */
+  height: auto; /* Keeps the aspect ratio */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  flex-direction: column; /* Keeps the text and image in a column */
+  text-align: center; /* Optional, centers the text inside the container */
+}
+
+.about-content img {
+  width: 100%; /* Takes up the full width of its container */
+  max-width: 800px; /* Maximum width for larger screens */
+  height: auto; /* Keeps the aspect ratio */
+  display: block; /* Makes the image a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+
 .about .about-content
 {
   flex: 0 0 100%;
@@ -843,23 +874,81 @@ h3.my-profession
 
 
 
+/* Card Container */
+.login-card {
+  width: 350px;
+  height: 250px;
+  perspective: 1000px; /* 3D effect */
+  cursor: pointer;
+  margin: 20px auto; /* Center the card */
+  margin-top: 10px;
+  padding-left: 35px;
+  margin-left: 35px;
+}
 
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d; /* 3D transformations */
+  transition: transform 0.6s ease-in-out; /* Smooth flip animation */
+}
 
+.login-card.flipped .card-inner {
+  transform: rotateY(180deg); /* Flip on the Y-axis */
+}
 
+/* Front of the Card */
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide when flipped */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits properly */
+  border-radius: 10px;
+}
 
+/* Back of the Card */
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide when not flipped */
+  background-color: var(--skin-color); /* Blank white background */
+  transform: rotateY(180deg); /* Position the back */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
 
+/* Text Area on the Back */
+.card-back textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none; /* Prevent resizing */
+  outline: none;
+  background-color: #f9f9f9; /* Light gray */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card-back textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}

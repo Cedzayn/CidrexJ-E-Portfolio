@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
     <!-- ==== Style Switcher ==== --> 
     <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
     <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
@@ -34,7 +37,7 @@
         <ul class="nav">
             <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
             <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-            <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+            <li><a href="#services"><i class="fa fa-list"></i>Achievements</a></li>
             <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
             <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
         </ul>
@@ -49,9 +52,10 @@
                 <div class="home-info padd-15">
                     <h3 class="hello">Hello, My Name is <span class="name">Cidrex Jamandron</span></h3>
                     <h3 class="my-profession">I' m a <span class="typing">IT Students</span></h3>
-                    <p>I am an IT student at Southville International School and Colleges, 
-                       specializing in Cybersecurity. With a passion for safeguarding digital environments.</p>
-                    <a href="#contact" class="btn hire-me">More About Me</a>
+                    <p>I am passionate about ethical hacking, digital forensics, and network security. 
+                        I enjoy solving complex cybersecurity 
+                        challenges and continuously expanding my knowledge in the ever-evolving field of information security.</p>
+                    <a href="Jamandron_CV.png" class="btn hire-me">My Resume/CV</a>
                 </div>
                 <div class="home-img padd-15">
                   <img src="formal.png" alt="">
@@ -73,13 +77,17 @@
                     <div class="row">
                         <div class="about-text padd-15">
                             <h3>I'm Cidrex Jamandron and <span>IT Students</span></h3>
-                        <p>"I am an IT student at Southville International School and Colleges, 
-                            majoring in Cybersecurity. My focus is on understanding and addressing modern cyber threats 
-                            while building secure systems to protect valuable digital assets."
-                        </p>
+                            <p>
+                                "My name is Cidrex Jamandron, and I am a 22-year-old third-year student at Southville International School and Colleges. 
+                                I am pursuing a Bachelor of Science in Information Technology with a major in Cybersecurity. 
+                                Passionate about ethical hacking, digital forensics, and network security, 
+                                I am dedicated to honing my skills and staying ahead of emerging cyber threats.
+                            </p>
+                        
                         </div>
                     </div>
-                    <div class="row">
+                    <img src="Boss.png" alt="brief" class="about-img">
+                    <div class="row hidden">
                         <div class="personal-info padd-15">
                             <div class="row">
                                 <div class="info-item ">
@@ -100,19 +108,6 @@
                                     <div class="info-item">
                                         <p>Contact Number : <span>+639707699066</span></p>
                                     </div>
-                                    <div class="info-item">
-                                        <p>City : <span>LPC</span></p>
-                                    </div>
-                                    <div class="info-item">
-                                        <p>Barangay : <span>PL1</span></p>
-                                    </div>
-                            </div>
-                            <div class="row">
-                                <div class="buttons padd-15">
-                                    <a href="#" class="btn">Download CV</a>
-                                    <a href="#contact" class="btn hire-me">Hire Me</a>
-
-                                </div>
                             </div>
                         </div>
                         <div class="skills">
@@ -155,8 +150,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="education  padd-15">
+                    <div class="row hidden">
+                        <div class="education padd-15">
                             <h3 class="title padd-15">Education</h3>
                             <div class="row">
                             <div class="timeline-box">
@@ -266,10 +261,10 @@
                  <div class="service-item padd-15">
                     <div class="service-item-inner">
                         <div class="icon">
-                            <i class="fa fa-mobile-alt"></i>
+                            <i class="fa fa-certificate"></i>
                         </div>
-                        <h4>Green and Blue Certificate</h4>
-                        <p>Senior Highschool</p>
+                        <h4>Certificate of Participation</h4>
+                        <p>IC5 (2024)</p>
                     </div>
                  </div>
                 <!-- ==== Service Item End ==== -->
@@ -277,21 +272,10 @@
                  <div class="service-item padd-15">
                     <div class="service-item-inner">
                         <div class="icon">
-                            <i class="fa fa-laptop-code"></i>
-                        </div>
-                        <h4>Bronze Medal Award</h4>
-                        <p>Senior Highschool</p>
-                    </div>
-                 </div>
-                <!-- ==== Service Item End ==== -->
-                 <!-- ==== Service Item Start ==== -->
-                 <div class="service-item padd-15">
-                    <div class="service-item-inner">
-                        <div class="icon">
-                            <i class="fa fa-palette"></i>
+                            <i class="fa fa-medal"></i>
                         </div>
                         <h4>Dean's Lister</h4>
-                        <p>1st-2nd year college</p>
+                        <p>2nd year (2024)</p>
                     </div>
                  </div>
                 <!-- ==== Service Item End ==== -->
@@ -299,10 +283,21 @@
                  <div class="service-item padd-15">
                     <div class="service-item-inner">
                         <div class="icon">
-                            <i class="fa fa-code"></i>
+                            <i class="fa fa-user-check"></i>
+                        </div>
+                        <h4>Edusoft Completer</h4>
+                        <p>2nd year (2024)</p>
+                    </div>
+                 </div>
+                <!-- ==== Service Item End ==== -->
+                 <!-- ==== Service Item Start ==== -->
+                 <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fa fa-check-circle"></i>
                         </div>
                         <h4>Salip Completers</h4>
-                        <p>Students Assistant</p>
+                        <p>2nd year (2024)</p>
                     </div>
                  </div>
                 <!-- ==== Service Item End ==== -->
@@ -310,10 +305,21 @@
                  <div class="service-item padd-15">
                     <div class="service-item-inner">
                         <div class="icon">
-                            <i class="fa fa-search"></i>
+                            <i class="fa fa-user-friends"></i>
                         </div>
                         <h4>Collaboration Award</h4>
-                        <p>5c's at SISC</p>
+                        <p>2nd year (2024)</p>
+                    </div>
+                 </div>
+                <!-- ==== Service Item End ==== -->
+                  <!-- ==== Service Item Start ==== -->
+                  <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fa fa-flag"></i>
+                        </div>
+                        <h4>Batch Representative</h4>
+                        <p> 2nd year 2023-2024</p>
                     </div>
                  </div>
                 <!-- ==== Service Item End ==== -->
@@ -321,10 +327,10 @@
                  <div class="service-item padd-15">
                     <div class="service-item-inner">
                         <div class="icon">
-                            <i class="fa fa-bullhorn"></i>
+                            <i class="fa fa-trophy"></i>
                         </div>
-                        <h4>With Honors</h4>
-                        <p>Junior Highschool</p>
+                        <h4>Dean's Lister</h4>
+                        <p>1st year (2023)</p>
                     </div>
                  </div>
                 <!-- ==== Service Item End ==== -->
@@ -332,10 +338,10 @@
                  <div class="service-item padd-15">
                     <div class="service-item-inner">
                         <div class="icon">
-                            <i class="fa fa-bullhorn"></i>
+                            <i class="fa fa-medal"></i>
                         </div>
-                        <h4>With Honors</h4>
-                        <p>Junior Highschool</p>
+                        <h4>Bronze Award</h4>
+                        <p>Senior Highschool(2022)</p>
                     </div>
                  </div>
                 <!-- ==== Service Item End ==== -->
@@ -343,10 +349,21 @@
                  <div class="service-item padd-15">
                     <div class="service-item-inner">
                         <div class="icon">
-                            <i class="fa fa-bullhorn"></i>
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                        <h4>Green Certificate</h4>
+                        <p>Senior Highschool (2020-2022)</p>
+                    </div>
+                 </div>
+                <!-- ==== Service Item End ==== -->
+                   <!-- ==== Service Item Start ==== -->
+                   <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fa fa-certificate"></i>
                         </div>
                         <h4>With Honors</h4>
-                        <p>Junior Highschool</p>
+                        <p>Junior Highschool(2015-2020)</p>
                     </div>
                  </div>
                 <!-- ==== Service Item End ==== -->
@@ -354,18 +371,30 @@
                  <div class="service-item padd-15">
                     <div class="service-item-inner">
                         <div class="icon">
-                            <i class="fa fa-bullhorn"></i>
+                            <i class="fa fa-award"></i>
                         </div>
-                        <h4>With Honors</h4>
-                        <p>Junior Highschool</p>
+                        <h4>Leadership Award</h4>
+                        <p>Elementary(2013-2015)</p>
                     </div>
                  </div>
                 <!-- ==== Service Item End ==== -->
-
+                 <!-- ==== Service Item Start ==== -->
+                 <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fa fa-award"></i>
+                        </div>
+                        <h4>Student Athlete of the year</h4>
+                        <p>Elementary(2014-2015)</p>
+                    </div>
+                 </div>
+                <!-- ==== Service Item End ==== -->
+              
             </div>
         </div>
      </section>
     <!-- ==== Services Section End ==== -->
+     
     <!-- ==== Portfolio Section Start ==== -->
     <section class="portfolio section " id="portfolio">
         <div class="container">
@@ -381,59 +410,108 @@
             </div>
             <div class="row">
                 <!-- ==== Portfolio Item Start ====-->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-dark">
-                        <div class="portfolio-img">
-                            <img src="sneaks.png" alt="">
-                        </div>
-                    </div>
-                 </div>
-                 <!-- ==== Portfolio Item End ====-->
-                  <!-- ==== Portfolio Item Start ====-->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-dark">
-                        <div class="portfolio-img">
-                            <img src="4p1w.jpg" alt="">
-                        </div>
-                    </div>
-                 </div>
-                 <!-- ==== Portfolio Item End ====-->
-                  <!-- ==== Portfolio Item Start ====-->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-dark">
-                        <div class="portfolio-img">
-                            <img src="librarysysten.png" alt="">
-                        </div>
-                    </div>
-                 </div>
-                 <!-- ==== Portfolio Item End ====-->
-                  <!-- ==== Portfolio Item Start ====-->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-dark">
-                        <div class="portfolio-img">
-                            <img src="sneaks.png" alt="">
-                        </div>
-                    </div>
-                 </div>
-                 <!-- ==== Portfolio Item End ====-->
-                  <!-- ==== Portfolio Item Start ====-->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-dark">
-                        <div class="portfolio-img">
-                            <img src="bank.jpg" alt="">
-                        </div>
-                    </div>
-                 </div>
-                 <!-- ==== Portfolio Item End ====-->
-                  <!-- ==== Portfolio Item Start ====-->
-                 <div class="portfolio-item padd-15">
-                    <div class="portfolio-item-inner shadow-dark">
-                        <div class="portfolio-img">
-                            <img src="bank.jpg" alt="">
-                        </div>
-                    </div>
-                 </div>
-                 <!-- ==== Portfolio Item End ====-->
+<div class="login-card">
+    <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+            <img src="Wireframe.png" alt="Login Card">
+        </div>
+        <!-- Back of the card -->
+        <div class="card-back">
+            <textarea placeholder="Write your text here...">Wireframe of a Human Resouces Information System this system conclude tab such as dashboard, and etc. this system is all about HR to make their work easily.</textarea>
+        </div>
+    </div>
+</div>
+<!-- ==== Portfolio Item End ====-->
+<!-- ==== Portfolio Item Start ====-->
+<div class="login-card">
+    <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+            <img src="sneaks.png" alt="Login Card">
+        </div>
+        <!-- Back of the card -->
+        <div class="card-back">
+            <textarea placeholder="Write your text here...">This is the sneakers and apparel store called CloudSoleMNL, and this system has a different theme (Regular&Shiny) and it contains a different tab like homepage, sneakers and apparel.</textarea>
+        </div>
+    </div>
+</div>
+<!-- ==== Portfolio Item End ====-->
+<!-- ==== Portfolio Item Start ====-->
+<div class="login-card">
+    <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+            <img src="librarysysten.png" alt="Login Card">
+        </div>
+        <!-- Back of the card -->
+        <div class="card-back">
+            <textarea placeholder="Write your text here...">This is Library System of Southville Internation School and Colleges and this system is all about a different function like you can see a list of all books in the library and you will see if the book is available or not.</textarea>
+        </div>
+    </div>
+</div>
+<!-- ==== Portfolio Item End ====-->
+<!-- ==== Portfolio Item Start ====-->
+<div class="login-card">
+    <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+            <img src="4p1w.jpg" alt="Login Card">
+        </div>
+        <!-- Back of the card -->
+        <div class="card-back">
+            <textarea placeholder="Write your text here...">This game, called 'G' (short for 'Guess'), is similar to the popular '4 Pics 1 Word.' In 'G,' players guess the common word that connects four images. It is designed to entertain the ASAT and Southville community, including students, employees, and staff, offering a fun and engaging way to relax and enjoy a break while testing creativity and observation skills.</textarea>
+        </div>
+    </div>
+</div>
+<!-- ==== Portfolio Item End ====-->
+<!-- ==== Portfolio Item Start ====-->
+<div class="login-card">
+    <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+            <img src="scrubecoco.png" alt="Login Card">
+        </div>
+        <!-- Back of the card -->
+        <div class="card-back">
+            <textarea placeholder="Write your text here...">Scrubecoco is a sustainable business that specializes in creating eco-friendly scrubs made from coconut-based ingredients. Our goal is to promote environmental responsibility by offering products that are not only gentle on the skin but also kind to the planet. Through this proposal, we aim to highlight the benefits of using natural, biodegradable ingredients, supporting both personal well-being and a cleaner, greener future.</textarea>
+        </div>
+    </div>
+</div>
+<!-- ==== Portfolio Item End ====-->
+<!-- ==== Portfolio Item Start ====-->
+<div class="login-card">
+    <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+            <img src="bank.jpg" alt="Login Card">
+        </div>
+        <!-- Back of the card -->
+        <div class="card-back">
+            <textarea placeholder="Write your text here...">The BankoISM is a online banking system and it contains a two types of user which is the admin and the customer and this system contain a withdraw, deposit, transaction history, check balance, and edit your profile.</textarea>
+        </div>
+    </div>
+</div>
+<!-- ==== Portfolio Item End ====-->
+ 
+
+
+               <!-- ==== Portfolio Item Start ====-->
+<div class="login-card">
+    <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+            <img src="portfolio.png" alt="Login Card">
+        </div>
+        <!-- Back of the card -->
+        <div class="card-back">
+            <textarea placeholder="Write your text here...">This is my e-portfolio in Google Sites and it's all about myself, and this site contains the about me, brief information, testimonial of my friend including my teacher and bosses, also my achievement inside or outside schools.</textarea>
+        </div>
+    </div>
+</div>
+<!-- ==== Portfolio Item End ====-->
+
+
             </div>
         </div>
     </section>
